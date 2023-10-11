@@ -1,0 +1,14 @@
+<div class="tools-panel">
+    <button (click)="applyFormatting('bold')">B</button>
+    <button (click)="applyFormatting('italic')">
+        <i>I</i>
+    </button>
+    <button (click)="applyFormatting('underline')">
+        <u>U</u>
+    </button>
+    <button (click)="applyHeading(1)">H1</button>
+    <button (click)="applyHeading(2)">H2</button>
+    <button (click)="applyHeading(3)">H3</button>
+    <!-- <input type="color"> -->
+</div>
+<div contenteditable="true" (input)="onTextChanged($event)"></div>
